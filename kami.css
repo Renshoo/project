@@ -1,0 +1,517 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+      color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.header : before {
+        content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0;
+    border-bottom: 1px solid #f1f1f1;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    background-color: blue;
+    padding: 15px 20px;
+    transition: 0.1s;
+    border-radius: 7px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-bg.jpg'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    height: 90vh !important; /* Tinggi sesuai dengan tinggi layar (viewport height) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* Warna teks */
+    font-family: Arial, sans-serif;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Ukuran teks judul */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em; /* Ukuran teks paragraf */
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF5722; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D84315; /* Warna latar belakang tombol saat dihover */
+}
+
+/* Main content section */
+.content {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.img-slider img{
+        width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -999;
+    height: 900px;
+    object-fit: cover;
+     background-image: url(Gallery/slider.jpg);
+
+}
+.slider-kami {
+    position: relative !important;
+
+}
+.kami-slider {
+    position: absolute;
+    top: 310px;
+    bottom: 0;
+    right: 0px;
+    left: 240px;
+}
+.kami-slider h2 {
+    font-size: 60px;
+}
+.kami-slider p {
+    font-size: 20px;
+}
+.kami-slider a {
+    padding: 20px;
+    font-size: 20px;
+    background-color: black;
+}
+.kami-ini .div .img-slider {
+    background-image: url(Gallery/slider.jpg);
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('Gallery/slider.jpg'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Tinggi sesuai dengan tinggi layar (viewport height) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* Warna teks */
+    font-family: Arial, sans-serif;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Ukuran teks judul */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em; /* Ukuran teks paragraf */
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF5722; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D84315; /* Warna latar belakang tombol saat dihover */
+}
+.product-judul span {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+.product-judul h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.counter-this {
+    padding: 40px;
+    padding-bottom: 40vh;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000015, -5px -5px 10px #00000015;
+    overflow: hidden;
+    transition: all ease 500ms;
+}
+.counter-this : hover {
+
+}
+.counter-this span {
+        font-size: 34px;
+    line-height: 45px;
+    font-weight: 900;
+    font-family: var(--subtext);
+    color: var(--colors);
+    letter-spacing: 0.5px;
+    max-width: 75%;
+}
+.counter-this p {
+    color: #616161;
+    max-width: 85%;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--subtext);
+}
+.profile-img img {
+    width: 100% !important;
+}
+
+.parallax {
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.parallax-bg {
+    background-image: url('Gallery/paralax.jpg'); /* Gambar latar belakang parallax */
+    op: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+     opacity: 4; 
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transform: translate3d(0, 0, 0); /* Mengoptimalkan kinerja parallax di beberapa browser */
+}
+
+.parallax-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+    z-index: 999;
+}
+
+.parallax-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    z-index: 999;
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    z-index: 999;
+}
+
+.section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333333;
+}
+/* kami.css */
+.product-image {
+    display: block;
+    width: 100%; /* Mengatur lebar gambar sesuai kontainer */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:focus .product-image,
+.product-card:hover .product-image {
+    transform: scale(1.05); /* Efek zoom saat gambar diklik atau diarahkan */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Bayangan tambahan saat zoom */
+}
+
+.product-card {
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.product-best {
+    position: relative;
+    overflow: hidden; /* Memastikan efek zoom tidak meluap dari kontainer */
+}
+
+.product-best img {
+    height: 200px;
+    display: block;
+    width: 100%; /* Mengatur gambar agar menyesuaikan lebar kontainer */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-best:hover img {
+    transform: scale(1.1); /* Efek zoom saat hover pada produk */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Bayangan saat hover */
+}
+
+.body-card {
+    height: 28vh;
+    z-index: 5;
+    background-color: #fff;
+    position: relative !important;
+    padding: 1.2rem 1.2rem 30px;
+}
+.product-best {
+        overflow: hidden;
+    border-radius: 0;
+    border: none;
+    box-shadow: 4px 4px 10px #00000010, -4px -4px 10px #00000010;
+}
+.tuch button {
+    position: absolute;
+    bottom: 28px;
+    margin-top: 16px;
+    background: #014AAD;
+    color: white;
+    padding: 8px 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    border:#014AAD ;
+    
+}
+.tuch a {
+    transition: all ease 500ms;
+}
+.tuch button:hover {
+    background-color: black;
+    transition: all ease 500ms;
+}
+.body-card i {
+    font-size: 16px;
+    color: #FFDC00;
+}
+.body-card span i {
+    font-size: 13px !important;
+    letter-spacing: .3px;
+    color: #777;
+    margin: 3px
+}
+.best span {
+    color: white;
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    font-size: 16px;
+    padding: 4px 15px;
+    background-color: #014AAD;
+    font-weight: 500;
+}
+.body-card p {
+    position: absolute;
+    top: 22px;
+    left: 40px;
+    font-size: 13px;
+}
+.body-card h6 {
+    ext-decoration: none !important;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 700 !important;
+    letter-spacing: .4px;
+}
+.why-kami i {
+    margin: 25px 0px;
+    font-size: 45px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background:#F0A830;
+}
+.why-kami i:hover {
+    background-color: #014aad;
+    transition: 0.5s;
+}
+.why-kami h3 {
+    margin: 14px 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.test-text p{
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2px;
+}
+.test-text h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.why-kami p {
+        font-size: 14px;
+    letter-spacing: 1px;
+}
+.blog-img img {
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
+}
+
+.blog-img {
+    box-shadow: 4px 4px 10px #00000010, -4px -4px 10px #00000010;
+}
+
+.artikel-blog {
+    padding: 20px;
+    height: 35vh;
+}
+
+.artikel-blog h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.artikel-blog span {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 50px;
+}
+
+.tuch-artikel {
+    position: relative; /* Posisi relatif untuk penempatan absolut button */
+}
+
+.tuch-artikel button {
+    position: absolute;
+    bottom: 15px;
+    background: #014AAD;
+    color: white;
+    padding: 8px 25px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+    left: 22px;
+}
+.tuch-artikel button:hover {
+    background-color: black;
+    transition: all ease 500ms;
+}
+
+.this-footer img {
+    width: 100%;
+    height: 11vh;
+    object-fit: contain;
+}
+.text-footer p {
+        font-size: 15px;
+    line-height: 1.3rem;
+    letter-spacing: 0px;
+}
+
