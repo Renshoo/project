@@ -29,6 +29,25 @@ body {
     z-index: 1000;
 
 }
+.btn-header {
+    background-color: #014AAD;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 15px;
+    margin-top: -8px;
+}
+.btn-header a{
+    padding: 8px 36px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+.logo img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+}
 
 .header : before {
         content: "";
@@ -81,7 +100,7 @@ body {
 
 .navbar ul li a:hover {
     color: #fff;
-    background-color: blue;
+    background-color: #014AAD;
     padding: 15px 20px;
     transition: 0.1s;
     border-radius: 7px;
@@ -128,22 +147,6 @@ body {
 
 .btn:hover {
     background-color: #D84315; /* Warna latar belakang tombol saat dihover */
-}
-
-/* Main content section */
-.content {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
 }
 
 .img-slider img{
@@ -233,28 +236,61 @@ body {
 .btn:hover {
     background-color: #D84315; /* Warna latar belakang tombol saat dihover */
 }
+.profile-test span {
+    font-size: 18px;
+    letter-spacing: .4px;
+}
+.profile-test {
+    margin-bottom: 80px;
+    line-height: 50px;
+}
+.profile-test h2 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.text-p p{
+    font-size: 17px;
+    letter-spacing: .8px;
+    margin-top: -25px;
+}
+.p-text p {
+    font-size: 17px;
+    letter-spacing: .8px;
+}
 .product-judul span {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
-    line-height: 70px;
+    line-height: 35px;
+    color: #F0A830;
 }
 .product-judul h2 {
     font-size: 40px;
     font-weight: 700;
+    margin-bottom: 35px;
     letter-spacing: 1px;
+    color: #000000;
 }
 .counter-this {
-    padding: 40px;
-    padding-bottom: 40vh;
+    
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #00000015, -5px -5px 10px #00000015;
     overflow: hidden;
     transition: all ease 500ms;
 }
+.counter-this img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3 / 3;
+    height: 100%;
+}
 .counter-this : hover {
 
+}
+.this-name {
+    padding: 25px;
 }
 .counter-this span {
         font-size: 34px;
@@ -505,13 +541,51 @@ body {
 }
 
 .this-footer img {
-    width: 100%;
-    height: 11vh;
+    width: 80%;
+    aspect-ratio: 4 / 2.5;
     object-fit: contain;
+    margin-bottom: 10px;
 }
 .text-footer p {
         font-size: 15px;
     line-height: 1.3rem;
-    letter-spacing: 0px;
+    letter-spacing: .8px;
 }
+.title-icon {
 
+    margin-bottom: 15px;
+}
+.title-icon a {
+    margin: 0px 12px;
+}
+.title-icon a:hover{
+    color: #000000;
+    transition: all 200ms;
+}
+.footer-icon i {
+    margin: 0px 5px;
+    font-size: 20px;
+    border: 30px;
+    padding: 7px;
+    color: black;
+    background-color: #fff;
+    border-radius: 48px;
+}
+.footer-icon i:hover {
+    background-color:#014AAD ;
+    transition: all 270ms;
+}
+.head-to h5 {
+    font-size: 25px;
+    line-height: 48px;
+    margin-bottom: 21px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+.footer-my {
+    margin-bottom: 0;
+    font-family: var(--primtext);
+    color: #f1f1f1;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
